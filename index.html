@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ぷよぷよ操作練習ツール</title>
+  <style>
+    #gameCanvas {
+      border: 1px solid black;
+    }
+
+    #gameExplanation {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="640" height="480"></canvas>
+  <div id="gameExplanation">
+    <br>
+    <br>
+    <br>
+    <h2>ぷよぷよ操作練習ツール 説明</h2>
+    <p><br>
+       操作方法:<br>
+       ・画面の下にある箱の中に、同じ色の玉を落としていきます。<br>
+       ・カーソルキーの左右で移動します。<br>
+       ・Ｚキーで左回転、Ｘキーで右回転です。<br>
+       ・カーソルキーの上下でスピードを変更できます。<br>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
