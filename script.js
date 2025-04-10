@@ -413,6 +413,7 @@ function draw() {
   drawSpeed();
   drawScore();
   drawGetPuyo();
+  drawNokori();
 
 }
 
@@ -533,6 +534,22 @@ function drawNextPuyo() {
       ctx.closePath();
     }
   }
+
+}
+
+function drawNokori() {
+
+  ctx.font = '20px serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = 'blue';
+  ctx.fillText('残り' , 13 * cellsize + (cellsize / 2), 1 * cellsize + (cellsize / 2));
+
+  ctx.font = '20px serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = 'blue';
+  ctx.fillText(puyosuu - puyonowidx , 13 * cellsize + (cellsize / 2), 2 * cellsize + (cellsize / 2));
 
 }
 
